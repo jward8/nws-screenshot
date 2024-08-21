@@ -1,4 +1,15 @@
 const {chromium} = require("playwright");
+const nodemailer = require("nodemailer");
+
+const transporter = nodemailer.createTransport({
+  host: "live.smtp.mailtrap.io",
+  port: 587,
+  auth: {
+    user: "",
+    pass: ""
+  }
+})
+
 (async () => {
   let browser = await chromium.launch();
 

@@ -12,6 +12,7 @@
     "@types/node": "^22.4.1"
   },
   "dependencies": {
+    "nodemailer": "^6.9.14",
     "playwright": "^1.46.1"
   }
 }
